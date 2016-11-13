@@ -1,0 +1,202 @@
+<?php
+// $Id: book_access.install,v 1.4.2.10 2010/01/07 20:51:26 kiam Exp $
+
+/**
+ * Implements hook_enable().
+ */
+function book_access_enable() {
+  node_access_needs_rebuild();
+}
+
+/**
+ * Implements hook_disable().
+ */
+function book_access_disable() {
+  node_access_needs_rebuild();
+}
+
+/**
+ * Implements hook_install().
+ */
+function book_access_install() {
+  drupal_install_schema('book_access');
+
+  db_query("UPDATE {system} SET weight = 2 WHERE name = 'book_access'");
+}
+
+/**
+ * Implements hook_schema().
+ */
+function book_access_schema() {
+  $schema = array();
+
+  $schema['book_access_role'] = array(
+    'description' => 'Table for tracking book access.',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'Primary key: The node ID of the book.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'rid' => array(
+        'description' => 'Primary key: The role ID associated with a book node ID.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_view' => array(
+        'description' => 'View book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_update' => array(
+        'description' => 'Edit book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_delete' => array(
+        'description' => 'Delete book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('nid', 'rid'),
+  );
+
+  $schema['book_access_user'] = array(
+    'description' => 'Table for tracking book access by user.',
+    'fields' => array(
+      'nid' => array(
+        'description' => 'Primary key: The node ID of the book.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'uid' => array(
+        'description' => 'Primary key: The user ID associated with a book node ID.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_view' => array(
+        'description' => 'View book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_update' => array(
+        'description' => 'Edit book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_delete' => array(
+        'description' => 'Delete book pages permission.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('nid', 'uid'),
+  );
+
+  return $schema;
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function book_access_update_6100() {
+  $ret[] = update_sql("UPDATE {system} SET weight = 2 WHERE name = 'book_access'");
+
+  return $ret;
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function book_access_update_6101() {
+  $ret = array();
+  $schema = array();
+
+  $schema['book_access_user'] = array(
+    'fields' => array(
+      'nid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_view' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_update' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'grant_delete' => array(
+        'type' => 'int',
+        'size' => 'tiny',
+        'insigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('nid', 'uid'),
+  );
+
+  if (!db_table_exists('book_access_user')) {
+    db_create_table($ret, 'book_access_user', $schema['book_access_user']);
+  }
+
+  if (!db_table_exists('book_access_role')) {
+    db_rename_table($ret, 'book_access', 'book_access_role');
+  }
+
+  return $ret;
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function book_access_update_6103() {
+  $ret = array();
+
+  $ret[] = update_sql("UPDATE {node_access} SET realm = 'book_access_role' WHERE realm = 'book_access'");
+
+  return $ret;
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function book_access_uninstall() {
+  drupal_uninstall_schema('book_access');
+}

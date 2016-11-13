@@ -1,0 +1,50 @@
+/*!
+ * Dynamic display block module template:chromatic-blue40l - Cascading Style Sheet 
+ * Copyright(c) 2008 - 2009 P. Blaauw All rights reserved. 
+ * Version 1.0 (27-DEC-2009) 
+ */ 
+div.ddblock-cycle-chromatic-blue40l div.container{background:#444 url(images/container_gradient.png) repeat scroll 0 0!important;width:730px;}
+div.ddblock-cycle-chromatic-blue40l div.container-inner{border:3px solid #ccc;height:310px;padding:10px;position:relative;}
+div.ddblock-cycle-chromatic-blue40l div.slider{width:710px;}
+div.ddblock-cycle-chromatic-blue40l div.slider-inner{height:310px;overflow:hidden;position:relative;visibility:hidden;}
+div.ddblock-cycle-chromatic-blue40l div.slide{display:none;height:310px;width:702px;}
+div.ddblock-cycle-chromatic-blue40l div.slide-image-right{float:left;}
+div.ddblock-cycle-chromatic-blue40l div.slide-image-left{float:right;}
+div.ddblock-cycle-chromatic-blue40l div.slide-image img{height:310px;margin:0!important;padding:0!important;width:500px;}
+div.ddblock-cycle-chromatic-blue40l div.slide-text{background:transparent url(images/slide_text_gradient.png) repeat-x !important;position:relative;width:192px;}
+div.ddblock-cycle-chromatic-blue40l div.slide-text-right{float:right;}
+div.ddblock-cycle-chromatic-blue40l div.slide-text-left{float:left;}
+div.ddblock-cycle-chromatic-blue40l div.slide-text-inner{height:206px;padding:10px;position:relative;}
+div.ddblock-cycle-chromatic-blue40l div.slide-title{text-align:center;}
+div.ddblock-cycle-chromatic-blue40l div.slide-title h2{margin:0;padding:0;}
+div.ddblock-cycle-chromatic-blue40l div.slide-title-inner{color:white;font-weight:bold;}
+div.ddblock-cycle-chromatic-blue40l div.slide-body{width:170px;}
+div.ddblock-cycle-chromatic-blue40l div.slide-body-inner{color:white;}
+div.ddblock-cycle-chromatic-blue40l div.slide-body-inner p{margin:0 8px 0 0;padding:0;}
+div.ddblock-cycle-chromatic-blue40l div.slide-read-more{width:110px;z-index:100;}
+div.ddblock-cycle-chromatic-blue40l div.slide-read-more p{margin:0!important;padding:0!important;}
+div.ddblock-cycle-chromatic-blue40l div.slide-read-more a{background:url(../images/readmore.png) no-repeat;border:none;bottom:5px;color:#fff;font-family:times New Roman;font-size:14px;margin:0;padding:4px 0 4px 19px;position:absolute;right:5px;text-align:left;text-decoration:none;width:100px;}
+div.ddblock-cycle-chromatic-blue40l div.slide-read-more a:hover{background:url(../images/readmore-hover.png) no-repeat;text-decoration:underline;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager{background:#34608E;bottom:11px;display:block;height:36px;position:absolute;width:192px;z-index:100;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager-left{left:11px;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager-right{right:11px}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a{background:#34608E;border:1px solid #fff;color:#fff;display:block;float:left;font-family:Tahoma,Arial,sans-serif;font-size:.8em;font-weight:bold;height:36px;line-height:40px;margin:0 2px 0 0;position:absolute;text-align:center;text-decoration:none;width:60px;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a#prev2{line-height:20px;left:0;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a#count2{left:64px;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a#next2{left:128px;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a.activeSlide{background:#103869;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a:hover{background-color:#1A4071;}
+div.ddblock-cycle-chromatic-blue40l div.prev-next-pager a:focus{outline:none;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager{background:#34608E;bottom:50px;display:block;height:40px;;position:absolute;width:192px;z-index:100;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager-left{left:11px;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager-right{right:11px;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager-inner{height:40px;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager .custom-pager-item{float:left;width:40px;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager a{background-color:#34608E;border:1px solid #999;color:#fff;display:block;float:left;height:36px;opacity:.7;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager a.activeSlide{background-color:#34608E;border:1px solid #fff;opacity:1;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager a:hover{background-color:#1A4071;;border:1px solid #fff;opacity:1;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager a:focus{outline:none;}
+div.ddblock-cycle-chromatic-blue40l div.custom-pager img{border:none;height:30px;margin:0!important;padding:3px 4px!important;width:35px;}
+div.ddblock-cycle-chromatic-blue40l div.spacer-vertical{display:block;float:left;height:27px;width:8px;}
+div.ddblock-cycle-chromatic-blue40l div.spacer-horizontal{clear:both;height:4px;}
+

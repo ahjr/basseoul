@@ -1,0 +1,13 @@
+<?php
+function contact_variables_form_alter(&$form) {
+  if ($form['form_id']['#value'] == 'contact_mail_page') {
+    if (!empty($_GET['subject'])) {
+      $form['subject']['#value'] = $_GET['subject'];
+	}
+	
+    if (!empty($_GET['cid'])) {
+      $form['cid']['#value'] = $_GET['cid'];
+	}	
+  } 
+}
+?>

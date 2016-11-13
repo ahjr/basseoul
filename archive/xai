@@ -1,0 +1,100 @@
+INSERT INTO `date_format_types` VALUES ('medium','Medium',1);
+INSERT INTO `date_format_types` VALUES ('short','Short',1);
+INSERT INTO `date_format_types` VALUES ('time','Time',0);
+INSERT INTO `date_format_types` VALUES ('time_tz','Time plus timezone',0);
+INSERT INTO `date_format_types` VALUES ('multi_line','Multi-line',0);
+/*!40000 ALTER TABLE `date_format_types` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `date_formats`
+--
+
+LOCK TABLES `date_formats` WRITE;
+/*!40000 ALTER TABLE `date_formats` DISABLE KEYS */;
+INSERT INTO `date_formats` VALUES (1,'Y-m-d H:i','short',1);
+INSERT INTO `date_formats` VALUES (2,'m/d/Y - H:i','short',1);
+INSERT INTO `date_formats` VALUES (3,'d/m/Y - H:i','short',1);
+INSERT INTO `date_formats` VALUES (4,'Y/m/d - H:i','short',1);
+INSERT INTO `date_formats` VALUES (5,'d.m.Y - H:i','short',1);
+INSERT INTO `date_formats` VALUES (6,'m/d/Y - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (7,'d/m/Y - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (8,'Y/m/d - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (9,'M j Y - H:i','short',1);
+INSERT INTO `date_formats` VALUES (10,'j M Y - H:i','short',1);
+INSERT INTO `date_formats` VALUES (11,'Y M j - H:i','short',1);
+INSERT INTO `date_formats` VALUES (12,'M j Y - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (13,'j M Y - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (14,'Y M j - g:ia','short',1);
+INSERT INTO `date_formats` VALUES (15,'D, Y-m-d H:i','medium',1);
+INSERT INTO `date_formats` VALUES (16,'D, m/d/Y - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (17,'D, d/m/Y - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (18,'D, Y/m/d - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (19,'F j, Y - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (20,'j F, Y - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (21,'Y, F j - H:i','medium',1);
+INSERT INTO `date_formats` VALUES (22,'D, m/d/Y - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (23,'D, d/m/Y - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (24,'D, Y/m/d - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (25,'F j, Y - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (26,'j F Y - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (27,'Y, F j - g:ia','medium',1);
+INSERT INTO `date_formats` VALUES (28,'j. F Y - G:i','medium',1);
+INSERT INTO `date_formats` VALUES (29,'l, F j, Y - H:i','long',1);
+INSERT INTO `date_formats` VALUES (30,'l, j F, Y - H:i','long',1);
+INSERT INTO `date_formats` VALUES (31,'l, Y,  F j - H:i','long',1);
+INSERT INTO `date_formats` VALUES (32,'l, F j, Y - g:ia','long',1);
+INSERT INTO `date_formats` VALUES (33,'l, j F Y - g:ia','long',1);
+INSERT INTO `date_formats` VALUES (34,'l, Y,  F j - g:ia','long',1);
+INSERT INTO `date_formats` VALUES (35,'l, j. F Y - G:i','long',1);
+INSERT INTO `date_formats` VALUES (37,'H:i','custom',0);
+INSERT INTO `date_formats` VALUES (39,'H:i T','custom',0);
+INSERT INTO `date_formats` VALUES (41,'D, j M<b\\r>H:i','custom',0);
+INSERT INTO `date_formats` VALUES (42,'D, j M<b\\r>H:i Y','custom',0);
+INSERT INTO `date_formats` VALUES (43,'D, j M Y<b\\r>H:i','custom',0);
+/*!40000 ALTER TABLE `date_formats` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `date_repeat_nodegen_sequence`
+--
+
+LOCK TABLES `date_repeat_nodegen_sequence` WRITE;
+/*!40000 ALTER TABLE `date_repeat_nodegen_sequence` DISABLE KEYS */;
+INSERT INTO `date_repeat_nodegen_sequence` VALUES (1,'RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20101216T150000Z;WKST=MO');
+INSERT INTO `date_repeat_nodegen_sequence` VALUES (2,'RRULE:FREQ=WEEKLY;INTERVAL=1;UNTIL=20100624T150000Z;WKST=MO');
+INSERT INTO `date_repeat_nodegen_sequence` VALUES (3,'RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,WE;UNTIL=20100316T150000Z;WKST=MO');
+INSERT INTO `date_repeat_nodegen_sequence` VALUES (4,'RRULE:FREQ=MONTHLY;INTERVAL=1;BYDAY=-1TU;UNTIL=20101230T150000Z;WKST=MO');
+INSERT INTO `date_repeat_nodegen_sequence` VALUES (5,'RRULE:FREQ=MONTHLY;INTERVAL=1;BYDAY=+4TU;UNTIL=20101122T150000Z;WKST=MO');
+/*!40000 ALTER TABLE `date_repeat_nodegen_sequence` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `date_repeat_nodegen_sequence_member`
+--
+
+LOCK TABLES `date_repeat_nodegen_sequence_member` WRITE;
+/*!40000 ALTER TABLE `date_repeat_nodegen_sequence_member` DISABLE KEYS */;
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,9);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,10);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,11);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,12);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,13);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,14);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,15);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,16);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,17);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,18);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,19);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,20);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,21);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,22);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,23);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,24);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,25);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,26);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,27);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,28);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,29);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,30);
+INSERT INTO `date_repeat_nodegen_sequence_member` VALUES (1,31);

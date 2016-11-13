@@ -1,0 +1,29 @@
+; $Id: CHANGELOG.txt,v 1.1.2.12 2010/01/07 20:51:26 kiam Exp $
+; All the dates reported here are referred to UTC.
+
+Book access 6.x-1 2010-01-07
+----------------------------
+#676106 by gcaldonazzi, kiamlaluno: Problem with book_access.install.
+
+Book access 6.x-1 2010-01-01
+----------------------------
+#671864: Table 'book_access' doesn't exist.
+
+Book access 6.x-1 2009-12-13
+----------------------------
+#658424 by kiamlaluno: Implement hook_user().
+#658422 by kiamlaluno: Implement hook_nodeapi('delete').
+#361516 by deviantintegral, kiamlaluno: Use Book access to create User-based book permissions.
+#370452 by deviantintegral: By default, authenticated users can't view books.
+
+Book access 6.x-1 2009-11-23
+----------------------------
+#640098 by ilo: book_access_node_access_explain() fix.
+#640052 by ilo: Error viewing a book page with permissions to create a child page (hook_nodeapi() issues).
+#639326 by ilo: Error while showing the module settings page.
+#640040 by ilo: Enforce book node type and book[bid] checks.
+
+Book access 6.x-1 2009-11-19
+----------------------------
+#639318 by KiamLaLuno: Use of undefined constant BOOK_ACCESS_GRANT_PRIORITY.
+#340162 by dooug, imrook, KiamLaLuno: User can create page for every books.

@@ -1,0 +1,11 @@
+--- system/system.module	2010-04-02 10:17:18.000000000 +0900
++++ system/system.module.new	2010-05-04 12:50:47.000000000 +0900
+@@ -531,7 +531,7 @@ function _system_themes_access($theme) {
+  */
+ function system_init() {
+   // Use the administrative theme if the user is looking at a page in the admin/* path.
+-  if (arg(0) == 'admin' || (variable_get('node_admin_theme', '0') && arg(0) == 'node' && (arg(1) == 'add' || arg(2) == 'edit' || arg(1) == 'modify' || arg(2) == 'delete'))) {
++  if (arg(0) == 'admin' || (variable_get('node_admin_theme', '0') && arg(0) == 'node' && (arg(1) == 'add' || arg(2) == 'edit'))) {
+     global $custom_theme;
+     $custom_theme = variable_get('admin_theme', '0');
+     drupal_add_css(drupal_get_path('module', 'system') .'/admin.css', 'module');

@@ -1,0 +1,13 @@
+; $Id: contact_variables.info,v 1.4.2.1 2009/11/21 09:34:00 kiam Exp $
+name = Contact variable
+description = Allow contact form to have values prefilled from $_GET.
+package = Other
+dependencies[] = contact
+core = 6.x
+
+; Information added by drupal.org packaging script on 2010-01-07
+version = "1.0"
+core = "6.x"
+project = "contact_variables"
+datestamp = "1262897703"
+

@@ -1,0 +1,100 @@
+
+--
+-- Dumping data for table `content_node_field_instance`
+--
+
+LOCK TABLES `content_node_field_instance` WRITE;
+/*!40000 ALTER TABLE `content_node_field_instance` DISABLE KEYS */;
+INSERT INTO `content_node_field_instance` VALUES ('field_position','committee_member',-4,'Position','text_textfield','a:4:{s:4:\"rows\";i:5;s:4:\"size\";s:2:\"60\";s:13:\"default_value\";a:1:{i:0;a:2:{s:5:\"value\";s:0:\"\";s:14:\"_error_element\";s:46:\"default_value_widget][field_position][0][value\";}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"-4\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"inline\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','Position(s) on the committee','text',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_weight','committee_member',-1,'Weight','optionwidgets_select','a:2:{s:13:\"default_value\";a:1:{i:0;a:1:{s:5:\"value\";s:1:\"0\";}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"-1\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"hidden\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:6:\"hidden\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:6:\"hidden\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','Optional. In the menu, the heavier items will sink and the lighter items will be positioned nearer the top.','optionwidgets',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_date','event',-4,'Date','date_popup_repeat','a:10:{s:13:\"default_value\";s:9:\"strtotime\";s:18:\"default_value_code\";s:7:\"+7 days\";s:14:\"default_value2\";s:9:\"strtotime\";s:19:\"default_value_code2\";s:15:\"+7 days 2 hours\";s:12:\"input_format\";s:13:\"j M Y - H:i:s\";s:19:\"input_format_custom\";s:0:\"\";s:9:\"increment\";s:1:\"1\";s:10:\"text_parts\";a:0:{}s:10:\"year_range\";s:5:\"-3:+3\";s:14:\"label_position\";s:5:\"above\";}','a:9:{s:6:\"weight\";s:2:\"-4\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"inline\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','','date',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_event_toggle','event',-1,'BASS Event toggle','optionwidgets_onoff','a:2:{s:13:\"default_value\";a:1:{i:0;a:1:{s:5:\"value\";i:1;}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"-1\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"hidden\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:1;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:1;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:1;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:1;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','Uncheck this box if the event will be run by an external group (i.e. not BASS.)','optionwidgets',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_venue','event',-3,'Venue','text_textfield','a:4:{s:4:\"rows\";i:5;s:4:\"size\";s:2:\"60\";s:13:\"default_value\";a:1:{i:0;a:2:{s:5:\"value\";s:0:\"\";s:14:\"_error_element\";s:43:\"default_value_widget][field_venue][0][value\";}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"-3\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"inline\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','The venue at which the event will be held.','text',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_cost','event',-2,'Cost','text_textfield','a:4:{s:4:\"rows\";i:5;s:4:\"size\";s:2:\"15\";s:13:\"default_value\";a:1:{i:0;a:2:{s:5:\"value\";s:5:\"KRW0 \";s:14:\"_error_element\";s:42:\"default_value_widget][field_cost][0][value\";}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"-2\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"inline\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','','text',1);
+INSERT INTO `content_node_field_instance` VALUES ('field_url','sponsor',-4,'Url','text_textfield','a:4:{s:4:\"rows\";i:5;s:4:\"size\";s:2:\"60\";s:13:\"default_value\";a:1:{i:0;a:2:{s:5:\"value\";s:0:\"\";s:14:\"_error_element\";s:41:\"default_value_widget][field_url][0][value\";}}s:17:\"default_value_php\";N;}','a:9:{s:6:\"weight\";s:2:\"31\";s:6:\"parent\";s:0:\"\";s:5:\"label\";a:1:{s:6:\"format\";s:6:\"inline\";}s:6:\"teaser\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:4:\"full\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:4;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:2;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}i:3;a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}s:5:\"token\";a:2:{s:6:\"format\";s:7:\"default\";s:7:\"exclude\";i:0;}}','','text',1);
+/*!40000 ALTER TABLE `content_node_field_instance` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `content_type_committee_member`
+--
+
+LOCK TABLES `content_type_committee_member` WRITE;
+/*!40000 ALTER TABLE `content_type_committee_member` DISABLE KEYS */;
+INSERT INTO `content_type_committee_member` VALUES (91,91,-18,'President');
+INSERT INTO `content_type_committee_member` VALUES (93,93,-20,'Honorary Chair');
+INSERT INTO `content_type_committee_member` VALUES (95,95,-16,'Vice president and Welfare Chairperson');
+INSERT INTO `content_type_committee_member` VALUES (97,97,-14,'Treasurer');
+INSERT INTO `content_type_committee_member` VALUES (99,99,-12,'Membership Coordinator');
+/*!40000 ALTER TABLE `content_type_committee_member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `content_type_event`
+--
+
+LOCK TABLES `content_type_event` WRITE;
+/*!40000 ALTER TABLE `content_type_event` DISABLE KEYS */;
+INSERT INTO `content_type_event` VALUES (114,114,1,'Seoul Club','Free');
+INSERT INTO `content_type_event` VALUES (67,67,1,'Chakraa Restaurant, Itaewon','KRW 32,000');
+INSERT INTO `content_type_event` VALUES (69,69,0,'Chakraa Restaurant, Itaewon','KRW 40,000/session or KRW 150,000 for all 4 sessions ');
+INSERT INTO `content_type_event` VALUES (70,70,0,'Chakraa Restaurant, Itaewon','KRW 40,000/session or KRW 150,000 for all 4 sessions ');
+INSERT INTO `content_type_event` VALUES (71,71,0,'Chakraa Restaurant, Itaewon','KRW 40,000/session or KRW 150,000 for all 4 sessions ');
+INSERT INTO `content_type_event` VALUES (72,72,0,'Chakraa Restaurant, Itaewon','KRW 40,000/session or KRW 150,000 for all 4 sessions ');
+INSERT INTO `content_type_event` VALUES (108,108,1,'TBA','TBA');
+INSERT INTO `content_type_event` VALUES (112,112,1,'Test venue','KRW0 ');
+INSERT INTO `content_type_event` VALUES (106,106,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (107,107,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (100,100,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (101,101,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (102,102,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (103,103,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (104,104,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+INSERT INTO `content_type_event` VALUES (105,105,1,'Seoul Club','KRW 10,000 (members) / KRW 14,000 (non-members)');
+/*!40000 ALTER TABLE `content_type_event` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `content_type_sponsor`
+--
+
+LOCK TABLES `content_type_sponsor` WRITE;
+/*!40000 ALTER TABLE `content_type_sponsor` DISABLE KEYS */;
+INSERT INTO `content_type_sponsor` VALUES (6,6,NULL);
+/*!40000 ALTER TABLE `content_type_sponsor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ctools_css_cache`
+--
+
+LOCK TABLES `ctools_css_cache` WRITE;
+/*!40000 ALTER TABLE `ctools_css_cache` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ctools_css_cache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `ctools_object_cache`
+--
+
+LOCK TABLES `ctools_object_cache` WRITE;
+/*!40000 ALTER TABLE `ctools_object_cache` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ctools_object_cache` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `date_format_locale`
+--
+
+LOCK TABLES `date_format_locale` WRITE;
+/*!40000 ALTER TABLE `date_format_locale` DISABLE KEYS */;
+/*!40000 ALTER TABLE `date_format_locale` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `date_format_types`
+--
+
+LOCK TABLES `date_format_types` WRITE;
+/*!40000 ALTER TABLE `date_format_types` DISABLE KEYS */;
+INSERT INTO `date_format_types` VALUES ('long','Long',1);

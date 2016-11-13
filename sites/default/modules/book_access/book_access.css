@@ -1,0 +1,10 @@
+.book-access-div {
+  width: 30%;
+  margin: 0;
+  padding: 2px;
+  float: left;
+}
+
+.book-access-clearer {
+  clear: both;
+}

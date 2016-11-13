@@ -1,0 +1,6 @@
+; $Id: Exp $
+name = BASS Profile Tabs
+description = Add BASS administrative tabs to user profile
+core = 6.x
+project = profile_tabs
+version = "6.x-1.0"

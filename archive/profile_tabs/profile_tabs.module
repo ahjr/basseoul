@@ -1,0 +1,21 @@
+<?php
+function profile_tabs_menu() {
+
+    $items['user/%user/add_content'] = array(
+    'title' => 'Add Content',
+    'page callback' => 'profile_tabs_get_add_content',
+    'page arguments' => array(1),
+    'access callback' => 'profile_tabs_add_content_access',
+    'access arguments' => array(1),
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+function profile_tabs_add_content_access(){
+    return true;
+}
+function profile_tabs_get_add_content(){
+    drupal_goto('node/add');
+}
+?>
+

@@ -1,0 +1,33 @@
+Index: calendar/includes/calendar.inc
+===================================================================
+--- calendar/includes/.svn/text-base/calendar.inc.svn-base	2009-10-05 09:58:42.000000000 -0400
++++ calendar/includes/calendar.inc	2009-10-19 11:22:20.000000000 -0400
+@@ -308,11 +308,10 @@ function calendar_build_nodes(&$view, &$
+     $label        = isset($view->field[$name]) ? $view->field[$name]['label'] : $field['field_name'];
+     $tz_alias     = str_replace('.', '_', $field['timezone_field']);
+     $db_tz        = date_get_timezone_db($field['tz_handling']);
+     $local_tz     = date_get_timezone($field['tz_handling'], 'date');
+     $field_name   = $field['field_name'];
+-    $rrule_field  = str_replace(array('_value2', '_value'), '_rrule', $alias);
+             
+     // Set a flag to tell us if individual multi-day dates need to be 
+     // split into separate nodes.
+     $split_dates = TRUE;
+     if (strstr($view->current_display, '_ical')) {
+@@ -365,13 +364,13 @@ function calendar_build_nodes(&$view, &$
+       
+       $id = 'calendar:'. $item->{$view->base_field} .':'. $real_field .':'. $delta;
+       
+       // When creating iCal feeds for repeating dates we don't want all
+       // the multiple values, send only the first value.
+-      if (strstr($view->current_display, '_ical') && !empty($rrule_field) && !empty($item->$rrule_field)) {
+-        if (!in_array($rrule_field, $rrule_processed)) {
+-          $rrule_processed[] = $rrule_field;
++      if (strstr($view->current_display, '_ical')) {
++        if (!isset($rrule_processed[$item->nid])) {
++          $rrule_processed[$item->nid] = TRUE;
+         }
+         else {
+           continue;
+         }
+       }

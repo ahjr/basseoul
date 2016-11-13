@@ -1,0 +1,11 @@
+--- calendar/calendar_ical/calendar-view-ical.tpl.php.orig	2010-05-03 13:37:32.000000000 +0900
++++ calendar/calendar_ical/calendar-view-ical.tpl.php	2010-05-03 13:38:05.000000000 +0900
+@@ -39,7 +39,7 @@ DTSTART;<?php print $event['timezone'] ?
+ DTEND;<?php print $event['timezone'] ?>VALUE=DATE-TIME:<?php print($event['end'] . "\n") ?>
+ <?php endif; ?>
+ <?php if (!empty($event['rrule'])) : ?>
+-RRULE;<?php print($event['rrule'] . "\n") ?>
++<?php print($event['rrule'] . "\n") ?>
+ <?php endif; ?>
+ <?php if (!empty($event['url'])): ?>
+ URL;VALUE=URI:<?php print($event['url'] . "\n") ?>

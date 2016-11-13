@@ -1,0 +1,47 @@
+<!--1 - Email addresses: admin/settings/site-information, admin/build/contact, admin/settings/signup-->
+<!--2 - Log errors: admin/settings/error-reporting - change to log only-->
+<!--3 - IMCE profiles?  admin/settings/imce-->
+<!--4 - Search indexing after content is there: admin/settings/search-->
+<!--5 - Fix the breadcrumbs - user profile paths are screwy - subpaths are still screwy, but when I activate "sub-path url aliases", the caledar views break, so we'll just have to live with it for now - subscribed to similar issue http://drupal.org/node/570670-->
+<!--6 - Set up user groups and permissions (shouldn't do this until I've finalised the modules and user groups, though, so I don't have to go through it again.)-->
+<!--7 - WYSIWYG profiles - admin/settings/wysiwyg-->
+<!--8 - Membership application webform node/117-->
+<!--9 - Too many words on the front page.  Need to move that to About Us (President's letter) and simplify-->
+<!--10 - Superfish menu buggered on slideshow content type (Works on IE7)-->
+11 - File storage (photobucket, flickr)? for all images.  Need to be able to upload image from URL (http://drupal.org/project/filefield_sources) 
+     UPDATE: Flickr activated on the bass yahoo account.  Still need to move over the Filefield (complete).
+	 UPDATE: Sources can not be used with the multiple uploader, but I've made the judgement call that it's better to have a way to upload multiple files on those pages that require them than be able to upload from url.  Maybe I'll have to look into having both options available. 
+<!--12 - Disclaimers about content linked to us-->
+<!--13 - St Andrews Society page ... line at end about no affiliation? /st-andrews-society-seoul-->
+14 - Documentation!
+<!--15 - Sitemap-->
+<!--16 - Bug in events calendar (2 more links, 1 functional, 1 not.)  Issue submitted: http://drupal.org/node/747868-->
+<!--17 - Add shopping links to community links-->
+<!--18 - Content disclaimer, Privacy Statement, and Copyright statement?  Do we need them?-->
+<!--19 - Firm up event classifications for colour coding calendar - /admin/content/taxonomy/1/add/term-->
+<!--20 - Change link to Home in admin/build/menu/item/219/edit from http://new. to http://www. once live <!-- Cant't remember why this was necessary, but made a chnge that was allegedly to fix something not recognising <front>, and changed it back in the menu, so we'll have to keep an eye open -->
+21 - Gold sponsor logos may need alt= text, but that requires a customised tpl ... will revisit if any of the sponsor logos are unclear
+<!--22 - On slideshow pages, the arrows on the superfish menus don't show because of a conflict between jQuery and mootools.  The fix for this would be to either rewrite the entire drupal js library, rewrite the slideshow js, or change to a jQuery based slideshow. Until it becomes a problem, I'm leaving it.-->
+<!--23 - Slideshows missing: Enchanted evening[DONE with small img from old site], QBB 2009[DONE with some small img], and 2 from April/May that I don't have dates or descriptions for-->
+<!--24 - Print/Email links not present on Welfare Projects-->
+<!--25 - Go through Page content and move the image over to the filefield-->
+<!--26 - Go through the filefields and add external sources-->
+<!--27 - Fix phptemplate_form_alter so a call to the contact form with an argument will look up that argument in the db and assign a relevant cid to it-->
+<!--28 - Fix the formatting for printing (FIXED (sort of) - disabled the print option, as there's really no point.) -->
+
+Future proofing:
+<!--1 - Front page images needs to be changed from a block to some other way that's easily modifible-->
+<!--2 - /sites/default/files needs some kind of housekeeping or I'll need to change everything that uploads to there to use Filefield.-->
+<!--3 - Images need to be able to float without manually editing the html (Not found a decent solution for this.  For now, I'll add a page to the book about how to manually float them with css (image-left-top css)
+<!--4 - CAPTCHA module needed - either Mollom or reCAPTCHA-->
+<!--5 - Replace smoothgallery with Views Slideshow (installed, but not tried) or jQuery Gallery (tried ... will require some rewriting of the js) to fix the conflict with mootools/smoothgallery-->
+
+
+
+
+<!--I really need to re-examine the use of images (all uploaded files, really) on the site, and see if i can't make it more cohesive.  A list of all methods for uploading would be a good place to start.-->
+
+NOTES:-
+
+1 - 2 patches have been applied to the calendar module.  This was to fix repeating appointments not showing up in the ical export.  They are located in the module root, as they will be needed again when/if the module is ever updated.
+2 - The "Line break converter" input filter has been disabled on all input formats that use a WYSIWYG, as it was possibly causing a double <br /> to be saved in some cases in CKEditor.
